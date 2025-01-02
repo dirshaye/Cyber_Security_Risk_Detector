@@ -48,4 +48,4 @@ if st.button("Predict Risk Level"):
         risk_level = "High Risk" if prediction[0] == 1 else "Low Risk"
         st.subheader(f"Predicted Risk Level: {risk_level}")
     except Exception as e:
-        st.error(f"An error occurred: {e}")
+        st.error(f"An error occurred: {e}")    

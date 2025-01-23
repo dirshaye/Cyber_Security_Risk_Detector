@@ -1,20 +1,39 @@
 # Cybersecurity Risk Detector
 
 ## Overview
-The **Cybersecurity Risk Detector** is a machine learning-based project aimed at identifying and mitigating cybersecurity risks. This project analyzes data to detect potential vulnerabilities or threats, ensuring enhanced security.
+This project was developed as part of a machine learning assignment to build a **Cybersecurity Risk Detector**. The aim was to classify and detect potential cybersecurity threats using custom-generated datasets and machine learning algorithms. The project culminates in a local web application for real-time risk prediction.
+
+## Project Requirements and Implementation
+### Problem Selection
+The project tackles a classification problem to determine the presence or absence of cybersecurity risks. The dataset was custom-generated using Python and saved as `veri.csv`.
+
+### Implementation Steps
+1. **Dataset Creation:**
+   - Generated synthetic data (`veri.csv`) using Python and stored the code in `veri.ipynb`.
+2. **Model Training:**
+   - Trained the dataset using 10 different machine learning algorithms.
+   - Selected the best-performing algorithm based on Accuracy.
+   - Saved the best model as `eniyi.joblib`.
+3. **Web Application Development:**
+   - Designed a local web application using Streamlit.
+   - Integrated the trained model (`eniyi.joblib`) for real-time predictions.
+4. **Project Demonstration:**
+   - A demonstration video link showcasing the working application is provided in `link.text`.
 
 ## Features
-- Identifies potential cybersecurity risks.
-- Uses machine learning for threat identification.
-- Processes data to detect anomalies.
+- Custom dataset generation.
+- Evaluation of multiple ML algorithms.
+- Streamlit-based web application for risk detection.
+- Best model saved for reuse.
 
 ## Technologies Used
 - **Programming Language:** Python
-- **Frameworks/Libraries:**
-  - Scikit-learn
-  - Pandas
-  - NumPy
-  - Matplotlib
+- **Libraries:**
+  - Scikit-learn (ML algorithms)
+  - Pandas, NumPy (data processing)
+  - Matplotlib (visualization)
+  - Streamlit (web application)
+- **Model Serialization:** joblib
 - **Version Control:** Git
 
 ## Installation
@@ -32,22 +51,26 @@ The **Cybersecurity Risk Detector** is a machine learning-based project aimed at
    ```
 
 ## Usage
-1. Ensure `veri.csv` is available in the root directory.
-2. Train the model or run the detector:
+1. Ensure the dataset (`veri.csv`) is in the root directory.
+2. To train models and select the best one:
    ```bash
    python app.py
    ```
-3. Results and trained models will be saved as `eniyi.joblib`.
+3. Launch the web application:
+   ```bash
+   streamlit run app.py
+   ```
+4. Access the application in your browser and test predictions.
 
 ## Project Structure
 ```
 └── dirshaye-cyber_security_risk_detector/
-    ├── algoritma.ipynb     # Notebook for algorithm development
-    ├── app.py              # Main application script
-    ├── eniyi.joblib        # Trained machine learning model
-    ├── link.text           # Resource links or notes
-    ├── veri.csv            # Dataset for training and testing
-    └── veri.ipynb          # Notebook for data preprocessing
+    ├── algoritma.ipynb     # Notebook for evaluating algorithms
+    ├── app.py              # Streamlit application script
+    ├── eniyi.joblib        # Best-performing ML model
+    ├── link.text           # Video demonstration link
+    ├── veri.csv            # Generated dataset
+    └── veri.ipynb          # Notebook for dataset generation
 ```
 
 ## License
